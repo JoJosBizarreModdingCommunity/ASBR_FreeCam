@@ -13,5 +13,5 @@ ModMeta __stdcall GetModInfo() {
 }
 
 void __stdcall ModInit() {
-    printf("Hello from TestMod!\n");
+    JAPI_LogInfo("Test mod loaded!");
 }

@@ -7,4 +7,7 @@ file(GLOB_RECURSE SOURCES "src/*.c" "src/*.cpp" "src/*.h" "src/*.hpp")
 
 add_library(JAPIPlugin SHARED ${SOURCES})
 
-target_include_directories(${PROJECT_NAME} PRIVATE "src" "include")
+add_subdirectory(external/japi)
+
+target_include_directories(${PROJECT_NAME} PRIVATE "src" "external/japi/src/exports")
+target_link_libraries(${PROJECT_NAME} PRIVATE d3dcompiler_47)
