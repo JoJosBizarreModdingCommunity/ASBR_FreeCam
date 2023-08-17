@@ -4,9 +4,10 @@
 
 ModMeta __stdcall GetModInfo() {
     static ModMeta meta = {
-        "Test Mod",
-        "TestMod",
-        "1.0.0"
+        "Test Mod", // Name
+        "TestMod", // GUID
+        "1.0.0", // Version
+        "Kapilarny" // Author
     };
 
     return meta;
