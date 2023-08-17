@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 
+// This function is called when the mod is loaded.
+// It should return a ModMeta struct with the mod's information.
 ModMeta __stdcall GetModInfo() {
     static ModMeta meta = {
         "Test Mod", // Name
@@ -13,6 +15,7 @@ ModMeta __stdcall GetModInfo() {
     return meta;
 }
 
+// This function is called when the mod is loaded.
 void __stdcall ModInit() {
     JAPI_LogInfo("Initialized!");
 }
