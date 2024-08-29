@@ -17,5 +17,5 @@ ModMeta __stdcall GetModInfo() {
 
 // This function is called when the mod is loaded.
 void __stdcall ModInit() {
-    JAPI_LogInfo("Initialized!");
+    JINFO("Initialized!");
 }
