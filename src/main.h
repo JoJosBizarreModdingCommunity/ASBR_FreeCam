@@ -3,6 +3,7 @@
 #define EXPORT extern "C" __declspec(dllexport)
 
 #include <JojoAPI.h>
+#include <JAPIEvents.h>
 
 #define DEBUG_BUILD true // either true or false
 
