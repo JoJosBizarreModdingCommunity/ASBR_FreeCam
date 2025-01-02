@@ -7,7 +7,9 @@
 
 #define DEBUG_BUILD true // either true or false
 
-EXPORT ModMeta __stdcall GetModInfo();
+EXPORT JAPIModMeta __stdcall GetModMeta();
+
+EXPORT void __stdcall DrawImGUI();
 EXPORT void __stdcall ModInit();
 
 // Logger macros
